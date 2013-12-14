@@ -3,9 +3,14 @@ body {
   font: 10em;
 }
 
+#container {
+  margin: 0 auto;
+  text-align: center;
+}
+
 #love-dbc {
   position: relative;
-  margin: 0em;
+  margin: 0 auto;
 }
 
 #love-dbc:before, #love-dbc:after {
@@ -14,21 +19,39 @@ body {
   content: "";
   background: #c0392b;
   -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+      -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
 }
 
 #love-dbc:after {
   left: 0;
   -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
   -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+      -o-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
 }
 
 #love-dbc:before {
   -webkit-animation: boum-left 0.7s ease-in infinite;
+    -moz-animation: boum-left 0.7s ease-in infinite;
+      -o-animation: boum-left 0.7s ease-in infinite;
+        animation: boum-left 0.7s ease-in infinite;
 }
 
 #love-dbc:after {
   -webkit-animation: boum-right 0.7s ease-in infinite;
+    -moz-animation: boum-right 0.7s ease-in infinite;
+      -o-animation: boum-right 0.7s ease-in infinite;
+        ganimation: boum-right 0.7s ease-in infinite;
 }
 
 @-webkit-keyframes boum-left {
