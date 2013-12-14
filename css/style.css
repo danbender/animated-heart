@@ -1,16 +1,15 @@
 body {
   background-color: #cecece;
-  font: 10em;
 }
 
 #container {
+  width: 1000pxg;
   margin: 0 auto;
-  text-align: center;
 }
 
 #love-dbc {
+  margin: 100px;
   position: relative;
-  margin: 0 auto;
 }
 
 #love-dbc:before, #love-dbc:after {
