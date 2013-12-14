@@ -1,5 +1,63 @@
 body {
   background-color: #cecece;
+  font: 10em;
 }
 
-#container {}
+#love-dbc {
+  position: relative;
+  margin: 0em;
+}
+
+#love-dbc:before, #love-dbc:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  background: #c0392b;
+  -webkit-transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+}
+
+#love-dbc:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+}
+
+#love-dbc:before {
+  -webkit-animation: boum-left 0.7s ease-in infinite;
+}
+
+#love-dbc:after {
+  -webkit-animation: boum-right 0.7s ease-in infinite;
+}
+
+@-webkit-keyframes boum-left {
+  0%, 100% {
+    left: 300px;
+    width: 300px;
+    height: 510px;
+    border-radius: 150px 150px 0 0;
+  }
+
+  20%, 40% {
+    left: 300px;
+    width: 330px;
+    height: 540px;
+    border-radius: 210px 210px 0 0;
+  }
+}
+
+@-webkit-keyframes boum-right {
+  0%, 100% {
+    width: 300px;
+    height: 510px;
+    border-radius: 150px 150px 0 0;
+  }
+
+  20%, 40% {
+    left: -30px;
+    width: 330px;
+    height: 540px;
+    border-radius: 210px 210px 0 0;
+  }
+}
