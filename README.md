@@ -1,5 +1,5 @@
 DBC! DBC! DBC!
 ==============
 
-A pulsating heart. Written in CSS 3 using only one div.
+In true CSS 3 fashion, and not cheesy at all: a pulsating heart. It uses only one div.
 
